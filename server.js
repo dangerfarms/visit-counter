@@ -17,7 +17,7 @@ const page = (count, last) => `<!doctype html>
 </style></head>
 <body><main>
   <div class="count">${count}</div>
-  <p>visits, counted in Postgres${last ? ` · the one before you came at ${last}` : ''}</p>
+  <p>visits, counted in Postgres and deployed on every push${last ? ` · the one before you came at ${last}` : ''}</p>
 </main></body></html>`;
 
 http.createServer(async (req, res) => {
